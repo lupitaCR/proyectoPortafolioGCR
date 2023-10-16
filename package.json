@@ -1,0 +1,19 @@
+{
+  "name": "proyectoportafoliogcr",
+  "version": "1.0.0",
+  "description": "Proyecto Final Aplicaciones Web Progresivas IDGS10A",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lupitaCR/proyectoPortafolioGCR.git"
+  },
+  "author": "Guadalupe Cruz Ramírez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lupitaCR/proyectoPortafolioGCR/issues"
+  },
+  "homepage": "https://github.com/lupitaCR/proyectoPortafolioGCR#readme"
+}
