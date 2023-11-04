@@ -1,24 +1,14 @@
+.animacionTitulos {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+}
+
 .imagenCarousel {
-  width: 50%;
-  height: 600px;
-  background-position: center center;
-	background-size: cover;
+  width: 100% !important;
+  height: 650px;
 	background-repeat: no-repeat;
-	position: relative;
 }
-.imagenCarousel:before {
-	content:'';
-	position: absolute;
-        top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background-color: rgba(0,0,0,0.6);
-}
-/*.imagenCarousel:before {
-  position: absolute;
-  /* background-image: linear-gradient(90deg, rgba(144,46,223,0.5214460784313726) 0%, rgba(235,15,216,0.5242471988795518) 42%, rgba(0,212,255,0.43461134453781514) 97%); 
-}*/
 
 .infoCarousel {
   text-align: center;
@@ -47,31 +37,62 @@
 .fontTitulos {
   font-family: 'Dancing Script', cursive;
   size: 20px;
-  color:#FDCEDE;
+  color:#6284E6;
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
 }
 
 .fontParrafos {
   size: 15px;
+  text-align: center;
   font-family: 'Poppins', sans-serif;
 }
 
-.fontOtrosTitulos {
-  size: 17px;
+.fontParrafos2 {
+  size: 15px;
+  text-align: justify;
   font-family: 'Poppins', sans-serif;
+}
+
+.disenoLineaSubLight {
+  width: 100%;
+  background-color:#FDCEDE;
+  border:2px solid #FDCEDE;
+  align-content: center;
+  margin-bottom: 50px;
+}
+
+.disenoLineaSubDark {
+  width: 100%;
+  background-color:#6284E6;
+  border:2px solid #6284E6;
+  align-content: center;
+  margin-bottom: 50px;
+}
+
+.fontSubtitulos {
+  size: 40px;
+  color:#FDCEDE;
+  text-align: center;
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  font-family: 'Dancing Script';
 }
 
 .botonPrimario {
   background-color: #6284E6;
   color: white;
+  border: 3px solid #6284E6 ;
   border-radius: 10px;
   size: 17px;
-  font-family: 'Poppins', sans-serif;
 }
 
 .botonPrimario:hover {
   background-color: white;
   color: #6284E6;
-  border-color: #6284E6;
+  border: 3px solid #6284E6 ;
   border-radius: 10px;
   size: 17px;
   font-family: 'Poppins', sans-serif;
@@ -80,6 +101,7 @@
 .botonDark {
   background-color: #FDCEDE;
   color: black;
+  border: 3px solid #FDCEDE ;
   border-radius: 10px;
   size: 17px;
   font-family: 'Poppins', sans-serif;
@@ -88,16 +110,32 @@
 .botonDark:hover {
   background-color: #FDCEDE;
   color: black;
-  border-color: #FDCEDE;
+  border:3px solid #FDCEDE;
   border-radius: 10px;
   size: 17px;
   font-family: 'Poppins', sans-serif;
 }
 
 /* Acerca de */
-.divAbout {
-  border-color: #6284E6;
+.estiloAbout {
+  border: 3px solid #6284E6;
   border-radius: 10px;
-  size: 2px;
-  
+
 }
+
+.iconosLight {
+  background-color: #6284E6;
+  color: white;
+  display: list-item;
+  align-content:space-between;
+}
+
+.iconosDark {
+  color: #6284E6;
+  display: block;
+  flex-direction: column;
+  align-content:space-between;
+  align-items: center;
+}
+
+
