@@ -29,10 +29,10 @@
 
 .disenoLineaSubLight {
   width: 100%;
-  background-color:#FDCEDE;
-  border:2px solid #FDCEDE;
+  border:2px solid #FDCEDE !important;
   align-content: center;
   margin-bottom: 50px;
+  border-radius: 50%;
 }
 
 .disenoLineaSubDark {
@@ -46,7 +46,6 @@
 .fontSubtitulos {
   size: 40px;
   color:#FDCEDE;
-  text-align: center;
   font-family: 'Dancing Script';
 }
 
@@ -224,7 +223,7 @@ background: linear-gradient(90deg, rgba(247,160,240,0.9416141456582633) 0%, rgba
   justify-content: center;
 }
 
-.circular-progress:before {
+ .circular-progress:before {
   content: "";
   position: absolute;
   height: 210px;
@@ -237,8 +236,7 @@ background: linear-gradient(90deg, rgba(247,160,240,0.9416141456582633) 0%, rgba
   position: relative;
   font-size: 20px;
   font-weight:bold;
-  color:black;
-}
+}  
 /* PROGRESS2 */
 .circular-progress2 {
   position: relative;
@@ -264,7 +262,6 @@ background: linear-gradient(90deg, rgba(247,160,240,0.9416141456582633) 0%, rgba
   position: relative;
   font-size: 20px;
   font-weight:bold;
-  color:black;
 }
 /* PROGRESS3 */
 .circular-progress3 {
@@ -291,7 +288,6 @@ background: linear-gradient(90deg, rgba(247,160,240,0.9416141456582633) 0%, rgba
   position: relative;
   font-size: 20px;
   font-weight:bold;
-  color:black;
 }
 /* PROGRESS4 */
 .circular-progress4 {
@@ -318,7 +314,6 @@ background: linear-gradient(90deg, rgba(247,160,240,0.9416141456582633) 0%, rgba
   position: relative;
   font-size: 20px;
   font-weight:bold;
-  color:black;
 }
 
   
