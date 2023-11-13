@@ -1,46 +1,18 @@
-.animacionTitulos {
-  animation-duration: 3s;
-  animation-name: slidein;
-  animation-iteration-count: infinite;
+@font-face{
+  font-family: 'Dancing Script';
+  src:url('../fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf');
+  font-weight: bold;
 }
 
-.imagenCarousel {
-  width: 100% !important;
-  height: 650px;
-	background-repeat: no-repeat;
+@font-face{
+  font-family: 'Poppins';
+  src:url('../fonts/Poppins/Poppins-Light.ttf');
 }
-
-.infoCarousel {
-  text-align: center;
-  display: flex;
-  flex-direction:column;
-  align-content: center;
-  padding-top: 15%;
-  align-content: center;
-}
-
-.olas {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-  width: 100% !important;
-  position: relative;
-}
-
-.background-navbarLight {
-  background-color: #FDCEDE;
-}
-
-.background-navbarDark {
-  background-color: #6284E6;
-}
-
+/* GENERAL */
 .fontTitulos {
   font-family: 'Dancing Script', cursive;
   size: 20px;
   color:#6284E6;
-  animation-duration: 3s;
-  animation-name: slidein;
-  animation-iteration-count: infinite;
 }
 
 .fontParrafos {
@@ -75,10 +47,21 @@
   size: 40px;
   color:#FDCEDE;
   text-align: center;
-  animation-duration: 3s;
-  animation-name: slidein;
-  animation-iteration-count: infinite;
   font-family: 'Dancing Script';
+}
+
+.fontSubtitulos2 {
+  size: 40px;
+  color:#6284E6;
+  font-family: 'Poppins', sans-serif;
+}
+
+.textLeft {
+text-align: left !important;
+}
+
+.textRight {
+  text-align: right !important;
 }
 
 .botonPrimario {
@@ -116,6 +99,57 @@
   font-family: 'Poppins', sans-serif;
 }
 
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+/* Navbar*/
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.background-navbarLight {
+  background-color: #FDCEDE;
+}
+
+.background-navbarDark {
+  background-color: #6284E6;
+}
+/* Carousel */
+.imagenCarousel {
+  width: 100% !important;
+  height: 650px;
+	background-repeat: no-repeat;
+}
+
+.infoCarousel {
+  text-align: center;
+  display: flex;
+  flex-direction:column;
+  align-content:center;
+  padding-top: 20%;
+  align-content: center;
+  
+}
+
 /* Acerca de */
 .estiloAbout {
   border: 3px solid #6284E6;
@@ -123,19 +157,170 @@
 
 }
 
+.imgAbout {
+  width: 250px;
+  height: 300px;
+}
+
+.fondoSocialM {
+  background-color: #6284E6 !important;
+}
+
 .iconosLight {
-  background-color: #6284E6;
-  color: white;
-  display: list-item;
-  align-content:space-between;
+  color: white !important;
 }
 
 .iconosDark {
   color: #6284E6;
-  display: block;
-  flex-direction: column;
-  align-content:space-between;
-  align-items: center;
 }
+
+/* habilidades */
+
+
+/* footer */
+.olas {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  width: 100% !important;
+  position:relative;
+  justify-content: flex-end;
+}
+
+.textFooter {
+  color:white;
+  font-weight: bold;
+  font-family: 'Dancing Script', cursive;
+  font-size: 18px;
+  text-align: center;
+}
+
+.imgFooter {
+  width: 120px;
+  height: 120px;
+}
+
+/* progress bar */
+  /* 
+  background: rgb(247,160,240);
+background: linear-gradient(90deg, rgba(247,160,240,0.9416141456582633) 0%, rgba(236,171,245,0.9248074229691877) 40%, rgba(83,209,235,0.9164040616246498) 100%);
+  */
+
+.container-progress {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  margin: 10px;
+}
+/* PROGRESS 1 */
+.circular-progress {
+  position: relative;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  background: conic-gradient(#6284E6, 3.6deg, #99b2fb 0deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circular-progress:before {
+  content: "";
+  position: absolute;
+  height: 210px;
+  width: 210px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.progress-value {
+  position: relative;
+  font-size: 20px;
+  font-weight:bold;
+  color:black;
+}
+/* PROGRESS2 */
+.circular-progress2 {
+  position: relative;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  background: conic-gradient(#6284E6, 3.6deg, #99b2fb 0deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circular-progress2:before {
+  content: "";
+  position: absolute;
+  height: 210px;
+  width: 210px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.progress-value2 {
+  position: relative;
+  font-size: 20px;
+  font-weight:bold;
+  color:black;
+}
+/* PROGRESS3 */
+.circular-progress3 {
+  position: relative;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  background: conic-gradient(#6284E6, 3.6deg, #99b2fb 0deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circular-progress3:before {
+  content: "";
+  position: absolute;
+  height: 210px;
+  width: 210px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.progress-value3 {
+  position: relative;
+  font-size: 20px;
+  font-weight:bold;
+  color:black;
+}
+/* PROGRESS4 */
+.circular-progress4 {
+  position: relative;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  background: conic-gradient(#6284E6, 3.6deg, #99b2fb 0deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circular-progress4:before {
+  content: "";
+  position: absolute;
+  height: 210px;
+  width: 210px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.progress-value4 {
+  position: relative;
+  font-size: 20px;
+  font-weight:bold;
+  color:black;
+}
+
+  
 
 
