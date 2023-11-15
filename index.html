@@ -23,7 +23,7 @@
     <!-- MENU -->
     <nav id="myNavbar" class="background-navbarLight navbar navbar-expand-md fixed-top">
       <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler btnMenuLight" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <a class="navbar-brand" href="#">
@@ -32,35 +32,32 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" style=" size: 15px;
-              font-family: 'Poppins', sans-serif;" aria-current="page" href="#acercaDe">Acerca de</a>
+              <a class="nav-link fontMenuLight" aria-current="page" href="#acercaDe">Acerca de</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" style=" size: 15px;
-              font-family: 'Poppins', sans-serif;" aria-current="page" href="#habilidades">Hablidades</a>
+              <a class="nav-link fontMenuLight" aria-current="page" href="#habilidades">Hablidades</a>
             <!-- habilidades: aptitudes,  -->
           </li>
             <li class="nav-item">
-              <a class="nav-link active" style=" size: 15px;
-              font-family: 'Poppins', sans-serif;" aria-current="page" href="#resumen">Resumen</a>
+              <a class="nav-link fontMenuLight" aria-current="page" href="#resumen">Resumen</a>
             <!--  de estudios -->
           </li>
             <li class="nav-item">
-              <a class="nav-link active" style=" size: 15px;
-              font-family: 'Poppins', sans-serif;" aria-current="page" href="#portafolio">Portafolio</a>
+              <a class="nav-link fontMenuLight" aria-current="page" href="#portafolio">Portafolio</a>
               <!-- portafolio: de fotos que han hecho -->
             </li>
-            <li class="nav-item">
+           <!--  <li class="nav-item">
               <a class="nav-link active" style=" size: 15px;
-              font-family: 'Poppins', sans-serif;" aria-current="page" href="#">Contacto</a>
-            <!-- contacto: de todo, ubicacion tal vez un formulario para enviar un correo, buscar eso -->
-          </li>
+              font-family: 'Dancing Script', cursive;" aria-current="page" href="#">Contacto</a>
+             contacto: de todo, ubicacion tal vez un formulario para enviar un correo, buscar eso -->
+          </li> 
           </ul>
           <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
             <li class="nav-item align-left">
               <button onclick="cambiarTema()" id="dl-icon" class="btn">
                 <span class="material-symbols-outlined">
-                  <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M480-360q50 0 
+                  <!-- fill del svg a cambio de modo obscuro -->
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="white" height="24" viewBox="0 -960 960 960" width="24"><path d="M480-360q50 0 
                     85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Zm0 80q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 
                     0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM80-440q-17 0-28.5-11.5T40-480q0-17 11.5-28.5T80-520h80q17 0 28.5 11.5T200-480q0 
                     17-11.5 28.5T160-440H80Zm720 0q-17 0-28.5-11.5T760-480q0-17 11.5-28.5T800-520h80q17 0 28.5 11.5T920-480q0 17-11.5 28.5T880-440h-80ZM480-760q-17 
@@ -86,20 +83,27 @@
           <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <!-- NOTA:  -->
-              <div class="carousel-item active">
-                <img src="./img/imgCarousel.jpg" class="imagenCarousel img-fluid rounded-left w-100" alt="...">
+              <div class="carousel-item active ">
+                <img src="./img/imgCarousel.jpg" class="imagenCarousel img-fluid rounded-left w-100" alt="imgCarousel1">
               </div>
               <div class="carousel-item">
-                <img src="./img/imgCarousel2.jpg" class="imagenCarousel img-fluid w-100" alt="...">
+                <img src="./img/imgCarousel2.jpg" class="imagenCarousel img-fluid w-100" alt="imgCarousel2">
               </div>
+              <svg  class="alignCircle" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#FDCEDE" d="M65,-46.6C79.1,-34.1,81.9,-7.4,75.6,16.1C69.3,39.5,53.9,59.6,33.3,69.8C12.7,79.9,-12.9,80.1,-28.8,68.9C-44.7,57.8,-50.8,35.4,-54.1,14.3C-57.3,-6.8,-57.7,-26.5,-48.2,-38C-38.7,-49.5,-19.4,-52.6,3,-55.1C25.4,-57.5,50.9,-59.2,65,-46.6Z" transform="translate(100 100)" />
+              </svg>
             </div>
           </div>
+          
         </div>
         <div class="infoCarousel col-sm-6 mb-5">
-          <h1 class="fontTitulos animacionTitulos">Guadalupe Cruz Ramírez</h1>
-          <p class="fontParrafos">Ing. Desarrollo y Gestión de Software</p>
+          <svg  class="alignCircle2" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#FDCEDE" d="M65,-46.6C79.1,-34.1,81.9,-7.4,75.6,16.1C69.3,39.5,53.9,59.6,33.3,69.8C12.7,79.9,-12.9,80.1,-28.8,68.9C-44.7,57.8,-50.8,35.4,-54.1,14.3C-57.3,-6.8,-57.7,-26.5,-48.2,-38C-38.7,-49.5,-19.4,-52.6,3,-55.1C25.4,-57.5,50.9,-59.2,65,-46.6Z" transform="translate(100 100)" />
+          </svg>
+          <h1 id="nombreCarousel" class="fontTitulosLight">Guadalupe Cruz Ramírez</h1>
+          <p id="carreraCarousel" class="fontParrafos">Ing. Desarrollo y Gestión de Software</p>
           <!-- NOTA: actualizar cv -->
-          <p><a id="btnDownCV" class="btn btn-lg botonPrimario" onclick="downloadCV()" role="button">Download cv</a></p>
+          <p><a id="btnDownCV" class="btn btn-lg botonPrimario mt-4" onclick="downloadCV()" role="button">Download cv</a></p>
         </div>
       </div>
       <b id="acercaDe"></b>
@@ -115,8 +119,8 @@
       </div>
       <p class="fontParrafos2 mb-5">
         Hola, mi nombre es Guadalupe Cruz Ramírez, soy Ingeniera en Desarrollo y Gestión de Software. 
-        Me especializo en proyectos de software en equipos de desarrollo, tengo experiencia e desarrollo front-end Web y desarrollo multiplataforma.
-        Me gusta trabajar en equipo, teniendo como valores la cooperación, responsabilidad, disciplina y sobre todo creatividad. 
+        Me especializo en proyectos de  desarrollo de software en equipos de trabajo, tengo experiencia en desarrollo front-end Web y desarrollo multiplataforma.
+        Me gusta trabajar en equipo, teniendo como valores la cooperación, responsabilidad, disciplina y creatividad. 
       </p>
     </div>
 
@@ -124,7 +128,7 @@
       <div class="card-body">
         <div class="row">
           <div class="col-md-7 flex-sm-column fontParrafos2">
-            <h2 class="fontTitulos"><b> Datos personales</b></h2>
+            <h2 class="fontTitulosLight"><b> Datos personales</b></h2>
             <ul class="list-unstyled font-small mt-5 mb-0">
               <li>
                 <p class="text-uppercase mb-2"><strong>Edad</strong></p>
@@ -241,29 +245,32 @@
       </div>
       </div>
     </div>
+    <b id="resumen"></b>
   </div>
 <!-- Habilidades -->
 
 <!-- Resumen -->
-<div id="resumen" class="container-fluid mt-5">
+<div  class="container-fluid mt-5">
   <div class="mb-3 text-center">
     <h1 class="fontSubtitulos"><b>Resumen</b></h1>
     <hr class="disenoLineaSubLight">
   </div>
+  <b id="portafolio"></b>
 </div>
 <!-- Resumen -->
 
 <!-- Portafolio -->
-<div id="portafolio" class="container-fluid mt-5">
+<div class="container-fluid mt-5">
   <div class="mb-3 text-center">
     <h1 class="fontSubtitulos"><b>Portafolio</b></h1>
     <hr class="disenoLineaSubLight">
   </div>
+  <b id="contacto"></b>
 </div>
 <!-- Portafolio -->
 
 <!-- Contacto -->
-<div id="contacto" class="container-fluid mt-5">
+<div class="container-fluid mt-5">
   <div class="mb-3 text-center">
     <h1 class="fontSubtitulos"><b>Contacto</b></h1>
     <hr class="disenoLineaSubLight">
@@ -291,10 +298,11 @@
   <!-- Footer -->
 
     <!-- Scripts -->
-      <script src="./js/index.js"></script>
-      <script src="./js/changeTheme.js"></script>
-      <script src="./js/bootstrap.bundle.min.js"></script>
-      <script src="./js/scrollreveal.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/changeTheme.js"></script>
+    <script src="./js/scrollreveal.js"></script>
+    <script src="./js/animacionScroll.js"></script>
       <!-- Option 1: Bootstrap Bundle with Popper -->
     <!--  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>-->
     <!-- Option 2: Separate Popper and Bootstrap JS -->

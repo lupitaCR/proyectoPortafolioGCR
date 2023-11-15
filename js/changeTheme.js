@@ -1,3 +1,6 @@
+/* 
+GCR: SCRIPT PARA CAMBIAR MODO NOCTURNO A LA PAGINA WEB
+*/
 var modeIconTheme = document.getElementById("dl-icon");
 
 const temaOscuro = () => {

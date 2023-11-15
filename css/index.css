@@ -9,10 +9,16 @@
   src:url('../fonts/Poppins/Poppins-Light.ttf');
 }
 /* GENERAL */
-.fontTitulos {
+.fontTitulosLight {
   font-family: 'Dancing Script', cursive;
   size: 20px;
   color:#6284E6;
+}
+
+.fontTitulosDark {
+  font-family: 'Dancing Script', cursive;
+  size: 20px;
+  color:#f593b3;
 }
 
 .fontParrafos {
@@ -69,6 +75,7 @@ text-align: left !important;
   border: 3px solid #6284E6 ;
   border-radius: 10px;
   size: 17px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .botonPrimario:hover {
@@ -81,18 +88,18 @@ text-align: left !important;
 }
 
 .botonDark {
-  background-color: #FDCEDE;
+  background-color: #f593b3;
   color: black;
-  border: 3px solid #FDCEDE ;
+  border: 3px solid #f593b3 ;
   border-radius: 10px;
   size: 17px;
   font-family: 'Poppins', sans-serif;
 }
 
 .botonDark:hover {
-  background-color: #FDCEDE;
-  color: black;
-  border:3px solid #FDCEDE;
+  background-color: rgba(0, 0, 0, 0);
+  color: #f593b3;
+  border:3px solid #f593b3;
   border-radius: 10px;
   size: 17px;
   font-family: 'Poppins', sans-serif;
@@ -107,6 +114,59 @@ text-align: left !important;
 }
 
 /* Navbar*/
+.btnMenuLight {
+  color:#f593b3;
+  border:0 !important;
+  outline: none;
+ }
+
+.btnMenuLight:focus {
+  color:#99b2fb;
+  border:0 !important;
+  outline: none;
+}
+
+
+ .btnMenuDark {
+   color:#6284E6;
+   border:0 !important;
+   outline:none;
+  }
+ 
+ .btnMenuDark:focus {
+  color:#6284E6;
+  border:0 !important;
+  outline:none;
+ }
+
+.fontMenuLight {
+  size: 50px;
+  font-weight: bold;
+  color:white;
+  font-family: 'Dancing Script';
+}
+
+.fontMenuDark {
+  size: 50px;
+  font-weight: bold;
+  color:black;
+  font-family: 'Dancing Script';
+}
+
+.fontMenuLight:hover {
+  size: 50px;
+  font-weight: bold;
+  color:#f593b3;
+  font-family: 'Dancing Script';
+}
+
+.fontMenuDark:hover {
+  size: 50px;
+  font-weight: bold;
+  color:#99b2fb;
+  font-family: 'Dancing Script';
+}
+
 .nav-scroller {
   position: relative;
   z-index: 2;
@@ -134,8 +194,12 @@ text-align: left !important;
 }
 /* Carousel */
 .imagenCarousel {
-  width: 100% !important;
-  height: 650px;
+  width: 70% !important;
+  height: 490px;
+  margin: 15% ;
+  display: flex;
+  flex-direction: row;
+  align-content:space-between;
 	background-repeat: no-repeat;
 }
 
@@ -149,11 +213,35 @@ text-align: left !important;
   
 }
 
+.alignCircle {
+  position: absolute;
+  display: flex;
+  align-items:normal;
+  bottom: -5px;
+  left: -20px;
+  width: 200px;
+  height: 200px;
+  z-index: 1;
+}
+
+.alignCircle2 {
+  position: absolute;
+  display: flex;
+  align-items:normal;
+  bottom: 300px;
+  right: -5px;
+  width: 200px;
+  height: 200px;
+  z-index: -1;
+
+}
+
+
 /* Acerca de */
 .estiloAbout {
   border: 3px solid #6284E6;
   border-radius: 10px;
-
+  box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.2);
 }
 
 .imgAbout {
@@ -167,10 +255,14 @@ text-align: left !important;
 
 .iconosLight {
   color: white !important;
+  background-color: #6284E6;
+  cursor: pointer;
 }
 
 .iconosDark {
-  color: #6284E6;
+  color: #6284E6 !important;
+  background-color: black;
+  cursor: pointer;
 }
 
 /* habilidades */
