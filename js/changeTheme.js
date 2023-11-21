@@ -5,6 +5,8 @@ var modeIconTheme = document.getElementById("dl-icon");
 
 const temaOscuro = () => {
     document.querySelector("body").setAttribute("data-bs-theme", "dark");
+
+    //Navbar
     modeIconTheme.innerHTML = `
     <span class="material-symbols-outlined">
         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M480-120q-150 0-255-105T120-480q0-150 
@@ -13,16 +15,45 @@ const temaOscuro = () => {
         198t198 82Zm-10-270Z"/></svg>
     </span>
     `;
-
-    //Navbar
     document.querySelector("#iconNavbar").setAttribute("src", "./img/iconoDark.png");
     document.querySelector("#myNavbar").setAttribute("class", "background-navbarDark navbar navbar-expand-md fixed-top");
-    
+    document.querySelector("#aAcerca").setAttribute("class", "nav-link fontMenuDark");
+    document.querySelector("#aHabilid").setAttribute("class", "nav-link fontMenuDark");
+    document.querySelector("#aResumen").setAttribute("class", "nav-link fontMenuDark");
+    document.querySelector("#aPortafolio").setAttribute("class", "nav-link fontMenuDark");
+    //carousel
     document.querySelector("#btnDownCV").setAttribute("class", "btn btn-lg botonDark");
+    document.querySelector("#circle1").setAttribute("fill", "#f593b3");
+    document.querySelector("#nombreCarousel").setAttribute("class", "fontTitulosDark");
+    //About me
+    document.querySelector("#sub1").setAttribute("class", "fontSubtitulosDark");
+    document.querySelector("#line1").setAttribute("class", "disenoLineaSubDark");
+    document.querySelector("#cardAbout").setAttribute("class", "card rounded estiloAboutDark");
+    document.querySelector("#sectionSM").setAttribute("class", "d-flex justify-content-evenly mt-4 p-1 fondoSMDark");
+    document.querySelector("#iconSM1").setAttribute("class", "iconosDark");
+    document.querySelector("#iconSM2").setAttribute("class", "iconosDark");
+    document.querySelector("#iconSM3").setAttribute("class", "iconosDark");
+     //Habilidades
+    document.querySelector("#sub2").setAttribute("class", "fontSubtitulosDark");
+    document.querySelector("#line2").setAttribute("class", "disenoLineaSubDark");
+        //progress bar
+        document.querySelector("#progress1").setAttribute("class", "cambiaDark");
+        document.querySelector("#progress2").setAttribute("class", "cambiaDark");
+        document.querySelector("#progress3").setAttribute("class", "cambiaDark");
+        document.querySelector("#progress4").setAttribute("class", "cambiaDark");
+        //titulos
+        document.querySelector("#progressTitle1").setAttribute("class", "text-uppercase fontSubtitulos2Dark");
+        document.querySelector("#progressTitle2").setAttribute("class", "text-uppercase fontSubtitulos2Dark");
+        document.querySelector("#progressTitle3").setAttribute("class", "text-uppercase fontSubtitulos2Dark");
+        document.querySelector("#progressTitle4").setAttribute("class", "text-uppercase fontSubtitulos2Dark");
+
+
 }
 
 const temaClaro = () => {
     document.querySelector("body").setAttribute("data-bs-theme", "light");
+
+    //navbar
     document.querySelector("#dl-icon");
     modeIconTheme.innerHTML = `
     <span class="material-symbols-outlined">
@@ -37,11 +68,37 @@ const temaClaro = () => {
         12-28 11.5T183-183Zm297-297Z"/></svg>
     </span>
     `;
-
-    //navbar
     document.querySelector("#iconNavbar").setAttribute("src", "./img/iconoLight.png");
     document.querySelector("#myNavbar").setAttribute("class", "background-navbarLight navbar navbar-expand-md fixed-top");
+    document.querySelector("#aAcerca").setAttribute("class", "nav-link fontMenuLight");
+    document.querySelector("#aHabilid").setAttribute("class", "nav-link fontMenuLight");
+    document.querySelector("#aResumen").setAttribute("class", "nav-link fontMenuLight");
+    document.querySelector("#aPortafolio").setAttribute("class", "nav-link fontMenuLight");
+    //carousel
     document.querySelector("#btnDownCV").setAttribute("class", "btn btn-lg botonPrimario");
+    document.querySelector("#circle1").setAttribute("fill", "#6284E6");
+    document.querySelector("#nombreCarousel").setAttribute("class", "fontTitulosLight");
+    //About me
+    document.querySelector("#sub1").setAttribute("class", "fontSubtitulosLight");
+    document.querySelector("#line1").setAttribute("class", "disenoLineaSubLight");
+    document.querySelector("#cardAbout").setAttribute("class", "card rounded estiloAboutLight");
+    document.querySelector("#sectionSM").setAttribute("class", "d-flex justify-content-evenly mt-4 p-1 fondoSMLight");
+    document.querySelector("#iconSM1").setAttribute("class", "iconosLight");
+    document.querySelector("#iconSM2").setAttribute("class", "iconosLight");
+    document.querySelector("#iconSM3").setAttribute("class", "iconosLight");
+    //Habilidades
+    document.querySelector("#sub2").setAttribute("class", "fontSubtitulosLight");
+    document.querySelector("#line2").setAttribute("class", "disenoLineaSubLight");
+        //progress 1
+        document.querySelector("#progress1").setAttribute("class", " circular-progress");
+        document.querySelector("#progress2").setAttribute("class", " circular-progress2");
+        document.querySelector("#progress3").setAttribute("class", " circular-progress3");
+        document.querySelector("#progress4").setAttribute("class", " circular-progress4");
+        //titulos
+        document.querySelector("#progressTitle1").setAttribute("class", "text-uppercase fontSubtitulos2");
+        document.querySelector("#progressTitle2").setAttribute("class", "text-uppercase fontSubtitulos2");
+        document.querySelector("#progressTitle3").setAttribute("class", "text-uppercase fontSubtitulos2");
+        document.querySelector("#progressTitle4").setAttribute("class", "text-uppercase fontSubtitulos2");
 }
 
 const cambiarTema = () => {

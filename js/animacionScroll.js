@@ -27,4 +27,5 @@ GCR: SCRIPT PARA AGREGAR EFECTOS DE ANIMACION A LA PAGINA WEB
     
 //HABILIDADES
     ScrollReveal().reveal('#animadoHability', { afterReveal: ejecutarProgress });
+    
 
