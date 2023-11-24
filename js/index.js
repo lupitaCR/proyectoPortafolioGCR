@@ -89,6 +89,10 @@ function ejecutarProgress() {
     }, speed4);
 }
 
+if ('scrollRestoration' in history) {
+    // Restaura la posición de desplazamiento después de cargar la página
+    history.scrollRestoration = 'manual';
+  }
 
 
 

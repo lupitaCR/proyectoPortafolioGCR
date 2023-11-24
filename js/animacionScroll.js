@@ -19,7 +19,7 @@ GCR: SCRIPT PARA AGREGAR EFECTOS DE ANIMACION A LA PAGINA WEB
     });
 
 //ABOUT ME
-    ScrollReveal().reveal('.estiloAbout',{
+    ScrollReveal().reveal('#cardAbout',{
         duration:2000,
         distance: '150%',
         origin:'top'
@@ -27,5 +27,32 @@ GCR: SCRIPT PARA AGREGAR EFECTOS DE ANIMACION A LA PAGINA WEB
     
 //HABILIDADES
     ScrollReveal().reveal('#animadoHability', { afterReveal: ejecutarProgress });
+
+//RESUMEN
+ScrollReveal().reveal('#resumen1',{
+    duration:2000,
+    distance: '150%',
+    origin:'left'
+});
+ScrollReveal().reveal('#resumen2',{
+    duration:2000,
+    distance: '150%',
+    origin:'right'
+});
+ScrollReveal().reveal('#resumen3',{
+    duration:2000,
+    distance: '150%',
+    origin:'left'
+});
+ScrollReveal().reveal('#resumen4',{
+    duration:2000,
+    distance: '150%',
+    origin:'right'
+});
+ScrollReveal().reveal('#resumen5',{
+    duration:2000,
+    distance: '150%',
+    origin:'left'
+});
     
 

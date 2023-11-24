@@ -9,7 +9,7 @@ const temaOscuro = () => {
     //Navbar
     modeIconTheme.innerHTML = `
     <span class="material-symbols-outlined">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M480-120q-150 0-255-105T120-480q0-150 
+        <svg xmlns="http://www.w3.org/2000/svg" fill="dark" height="24" viewBox="0 -960 960 960" width="24"><path d="M480-120q-150 0-255-105T120-480q0-150 
         105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 
         255T480-120Zm0-80q88 0 158-48.5T740-375q-20 5-40 8t-40 3q-123 0-209.5-86.5T364-660q0-20 3-40t8-40q-78 32-126.5 102T200-480q0 116 82 
         198t198 82Zm-10-270Z"/></svg>
@@ -46,7 +46,19 @@ const temaOscuro = () => {
         document.querySelector("#progressTitle2").setAttribute("class", "text-uppercase fontSubtitulos2Dark");
         document.querySelector("#progressTitle3").setAttribute("class", "text-uppercase fontSubtitulos2Dark");
         document.querySelector("#progressTitle4").setAttribute("class", "text-uppercase fontSubtitulos2Dark");
+    
+    //Resumen
+    document.querySelector("#sub3").setAttribute("class", "fontSubtitulosDark");
+    document.querySelector("#line3").setAttribute("class", "disenoLineaSubDark");
 
+    //Resumen
+    document.querySelector("#sub4").setAttribute("class", "fontSubtitulosDark");
+    document.querySelector("#line4").setAttribute("class", "disenoLineaSubDark");
+    //Footer
+    document.querySelector("#footerOlas").setAttribute("fill", "#6284E6");
+    document.querySelector("#imagenFooter").setAttribute("src", "./img/iconoDark.png");
+    document.querySelector("#footerContent").setAttribute("class", "divFooterDark d-flex justify-content-center align-items-center");
+    document.querySelector("#textFooter").setAttribute("class", "textFooterDark");
 
 }
 
@@ -57,7 +69,7 @@ const temaClaro = () => {
     document.querySelector("#dl-icon");
     modeIconTheme.innerHTML = `
     <span class="material-symbols-outlined">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M480-360q50 0 
+        <svg xmlns="http://www.w3.org/2000/svg" fill="white" height="24" viewBox="0 -960 960 960" width="24"><path d="M480-360q50 0 
         85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Zm0 80q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 
         0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM80-440q-17 0-28.5-11.5T40-480q0-17 11.5-28.5T80-520h80q17 0 28.5 11.5T200-480q0 
         17-11.5 28.5T160-440H80Zm720 0q-17 0-28.5-11.5T760-480q0-17 11.5-28.5T800-520h80q17 0 28.5 11.5T920-480q0 17-11.5 28.5T880-440h-80ZM480-760q-17 
@@ -99,6 +111,20 @@ const temaClaro = () => {
         document.querySelector("#progressTitle2").setAttribute("class", "text-uppercase fontSubtitulos2");
         document.querySelector("#progressTitle3").setAttribute("class", "text-uppercase fontSubtitulos2");
         document.querySelector("#progressTitle4").setAttribute("class", "text-uppercase fontSubtitulos2");
+    
+    //Resumen
+    document.querySelector("#sub3").setAttribute("class", "fontSubtitulosLight");
+    document.querySelector("#line3").setAttribute("class", "disenoLineaSubLight");
+
+    //Resumen
+    document.querySelector("#sub4").setAttribute("class", "fontSubtitulosLight");
+    document.querySelector("#line4").setAttribute("class", "disenoLineaSubLight");
+
+    //Footer
+    document.querySelector("#footerOlas").setAttribute("fill", "#FDCEDE");
+    document.querySelector("#imagenFooter").setAttribute("src", "./img/iconoLight.png");
+    document.querySelector("#footerContent").setAttribute("class", "divFooterLight d-flex justify-content-center align-items-center");
+    document.querySelector("#textFooter").setAttribute("class", "textFooterLight");
 }
 
 const cambiarTema = () => {
