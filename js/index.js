@@ -1,7 +1,10 @@
 /* 
 GCR: SCRIPT PRINCIPAL DE LA PAGINA WEB
 */
-
+//Scroll restaurado
+if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+} 
 //ABOUT ME
 function redSocialMedia(socialM) {
     switch (socialM) {
@@ -83,13 +86,9 @@ function ejecutarProgress() {
     }, speed4);
 }
 
-//Scroll restaurado
-if ('scrollRestoration' in history) {
-    history.scrollRestoration = 'manual';
-  }
-
 //PORTAFOLIO: filtrado de imagenes
 $(window).on("load" ,function() {
+     
     var $contenedorPortafolio = $('.portafolioContainer');
     $contenedorPortafolio.isotope({
         filter:'*',
@@ -110,10 +109,6 @@ $(window).on("load" ,function() {
         return false;
 
     });
-
-    $('#portafolio-item').mixItUp();
-
-
 })
 
 

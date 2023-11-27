@@ -190,7 +190,7 @@ text-align: left !important;
 .imagenCarousel {
   width: 70% !important;
   height: 60%;
-  margin: 15% ;
+  margin: 15%;
   border-radius: 10px;
   display: flex;
   flex-direction: row;
@@ -263,13 +263,6 @@ text-align: left !important;
 }
 
 /* habilidades */
-
-/* progress bar */
-  /* 
-  background: rgb(247,160,240);
-background: linear-gradient(90deg, rgba(247,160,240,0.9416141456582633) 0%, rgba(236,171,245,0.9248074229691877) 40%, rgba(83,209,235,0.9164040616246498) 100%);
-  */
-
 .container-progress {
   display: flex;
   flex-direction: column;
@@ -405,11 +398,6 @@ background: linear-gradient(90deg, rgba(247,160,240,0.9416141456582633) 0%, rgba
 }
 
 /* Resumen */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 .main {
   width: 100%;
@@ -759,10 +747,6 @@ figure:hover figcaption {
 .imgFooter {
   width: 120px;
   height: 120px;
-}
-
-body {
-  overflow-x: hidden;
 }
   
 
