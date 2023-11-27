@@ -55,4 +55,10 @@ ScrollReveal().reveal('#resumen5',{
     origin:'left'
 });
     
+//PORTAFOLIO
+
+ScrollReveal().reveal('#proyectGaleria',{
+    distance: '0px',
+    opacity: 0.8
+});
 

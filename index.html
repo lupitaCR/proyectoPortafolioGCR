@@ -5,12 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- Bootstrap CSS -->
-  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">     -->
-  <!-- <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/navbar-fixed/">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"> -->
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/footers/">
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/footers/">
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/index.css">
   <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
@@ -52,10 +47,6 @@
             <a id="aPortafolio" class="nav-link fontMenuLight" aria-current="page" href="#portafolio">Portafolio</a>
             <!-- portafolio: de fotos que han hecho -->
           </li>
-          <!--  <li class="nav-item">
-              <a class="nav-link active" style=" size: 15px;
-              font-family: 'Dancing Script', cursive;" aria-current="page" href="#">Contacto</a>
-             contacto: de todo, ubicacion tal vez un formulario para enviar un correo, buscar eso -->
           </li>
         </ul>
         <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
@@ -109,8 +100,7 @@
       <div class="infoCarousel col-md-6 mb-5">
         <h1 id="nombreCarousel" class="fontTitulosLight">Guadalupe Cruz Ramírez</h1>
         <p class="fontParrafos">Ing. Desarrollo y Gestión de Software</p>
-        <!-- NOTA: actualizar cv -->
-        <p><a id="btnDownCV" class="btn btn-lg botonPrimario mt-4" onclick="downloadCV()" role="button">Download cv</a>
+        <p><a id="btnDownCV" class="btn btn-lg botonPrimario mt-4" href="./js/cv_guadalupecr.pdf" download="cv_guadalupeCruzRamirez.pdf" role="button">Download cv</a>
         </p>
       </div>
     </div>
@@ -136,7 +126,7 @@
       <div class="card-body">
         <div class="row">
           <div class="col-md-7 flex-sm-column fontParrafos2">
-            <h2 class="fontTitulosLight"><b>Datos personales</b></h2>
+            <h2 id="tituloCard" class="fontTitulosLight"><b>Datos personales</b></h2>
             <ul class="list-unstyled font-small mt-5 mb-0">
               <li>
                 <p class="text-uppercase mb-2"><strong>Edad</strong></p>
@@ -207,7 +197,7 @@
         <div class="col-md-6 text-center mt-3">
           <span id="progressTitle1" class="text-uppercase fontSubtitulos2">Desarrollo web</span>
           <p class="fontParrafos2">
-            Experiencia en aplicaciones web y paginas web.
+            Experiencia en aplicaciones web y paginas web usando frameworks como Bootstrap y Angular.
           </p>
           <div class="container-progress">
             <div id="progress1" class="circular-progress">
@@ -220,7 +210,7 @@
         <div class="col-md-6 text-center mt-3">
           <span id="progressTitle2" class="text-uppercase fontSubtitulos2">Desarrollo movil</span>
           <p class="fontParrafos2">
-            Experiencia en desarrollo en Android Studio y Cordova.
+            Experiencia en desarrollo de aplicaciones moviles usando Android Studio y Cordova.
           </p>
           <div class="container-progress">
             <div id="progress2" class="circular-progress2">
@@ -234,9 +224,9 @@
 
       <div class="row">
         <div class="col-md-6 text-center mt-3">
-          <span id="progressTitle3" class="text-uppercase fontSubtitulos2">Frameworks</span>
+          <span id="progressTitle3" class="text-uppercase fontSubtitulos2">Equipos de trabajo</span>
           <p class="fontParrafos2">
-            Experiencia en Frameworks como Bootstrap, Angular, React.
+            Experiencia en metodologias agiles como SCRUM, usando aplicaciones como Bitbucket, Jira, GiHub.
           </p>
           <div class="container-progress">
             <div id="progress3" class="circular-progress3">
@@ -265,6 +255,7 @@
   </div>
   <b id="resumen"></b>
   </div>
+  <br><br><br>
   <!-- Habilidades -->
 
   <!-- Resumen -->
@@ -318,6 +309,7 @@
     
     <b id="portafolio"></b>
   </div>
+  <br><br><br>
   <!-- Resumen -->
 
   <!-- Portafolio -->
@@ -326,21 +318,168 @@
       <h1 id="sub4" class="fontSubtitulosLight"><b>Portafolio</b></h1>
       <hr id="line4" class="disenoLineaSubLight">
     </div>
+    <div class="container">
+      <div class="row">
+        <div class="part col-md-12">
+          <div class="portafolio-nav col-md-12" id="filter-button">
+            <ul>
+              <li data-filter="*" class="current">
+                <span>Todos</span>
+              </li>
+              <li data-filter=".proyectos-web">
+                <span>Desarrollo web</span>
+              </li>
+              <li data-filter=".proyectos-movil">
+                <span>Desarrollo movil</span>
+              </li>
+              <li data-filter=".proyectos-otros">
+                <span>Otros proyectos</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="galeria col-md-12" id="proyectGaleria">
+            <div class="portafolioContainer row">
+              <div class="grid-item col-md-4 proyectos-web">
+                <figure>
+                  <img src="./img/portafolio/web1.PNG" alt="">
+                  <figcaption class="fig-caption">
+                    <i class="fa fa-search"></i>
+                    <h3 class="tituloFigure">Proyecto Web-Movil</h3>
+                    <span class="subtituloFigure">Página multiplataforma sobre una tienda ficticia</span>
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="grid-item col-md-4 proyectos-movil">
+                <figure>
+                  <img src="./img/portafolio/movil2.jpeg" alt="">
+                  <figcaption class="fig-caption">
+                    <h3 class="tituloFigure">Aplicación móvil y API</h3>
+                    <span class="subtituloFigure">Aplicación móvil usando Android Studio e implementación de una API Rest</span>
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="grid-item col-md-4 proyectos-otros">
+                <figure>
+                  <img src="./img/portafolio/otros1.PNG" alt="">
+                  <figcaption class="fig-caption">
+                    <h3 class="tituloFigure">Creción de Mockups</h3>
+                    <span class="subtituloFigure">Vizualización real de un Mockup</span>
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="grid-item col-md-4 proyectos-web">
+                <figure>
+                  <img src="./img/portafolio/web2.jpeg" alt="">
+                  <figcaption class="fig-caption">
+                    <h3 class="tituloFigure">Aplicación Web segura</h3>
+                    <span class="subtituloFigure">Manejo de CRUD y seguridad ante inyección SQL</span>
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="grid-item col-md-4 proyectos-movil">
+                <figure>
+                  <img src="./img/portafolio/movil1.png" alt="">
+                  <figcaption class="fig-caption">
+                    <h3 class="tituloFigure">Front-End Angular-Ionic</h3>
+                    <span class="subtituloFigure">Aplicación movil usando Angular y Ionic</span>
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="grid-item col-md-4 proyectos-otros">
+                <figure>
+                  <img src="./img/portafolio/otros2.jpeg" alt="">
+                  <figcaption class="fig-caption">
+                    <h3 class="tituloFigure">Wireframe</h3>
+                    <span class="subtituloFigure">Creación de un wireframe para proyecto Web-movil</span>
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="grid-item col-md-4 proyectos-web">
+                <figure>
+                  <img src="./img/portafolio/web3.PNG" alt="">
+                  <figcaption class="fig-caption">
+                    <h3 class="tituloFigure">Aplicación web y PHP</h3>
+                    <span class="subtituloFigure">Implementación de un CRUD con PHP y MySQL</span>
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="grid-item col-md-4 proyectos-movil">
+                <figure>
+                  <img src="./img/portafolio/movil3.jpeg" alt="">
+                  <figcaption class="fig-caption">
+                    <h3 class="tituloFigure">Introducción a apps móviles</h3>
+                    <span class="subtituloFigure">Creacion de una calculadora en App Inventor</span>
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="grid-item col-md-4 proyectos-otros">
+                <figure>
+                  <img src="./img/portafolio/otros3.PNG" alt="">
+                  <figcaption class="fig-caption">
+                    <h3 class="tituloFigure">Inyección SQL</h3>
+                    <span class="subtituloFigure">Creación de formulario para manejo de inyección SQL</span>
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="grid-item col-md-4 proyectos-otros">
+                <figure>
+                  <img src="./img/portafolio/otros4.jpeg" alt="">
+                  <figcaption class="fig-caption">
+                    <h3 class="tituloFigure">Practicas SQL Server</h3>
+                    <span class="subtituloFigure">Creación y manejo de base de datos con SQL Server</span>
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="grid-item col-md-4 proyectos-otros">
+                <figure>
+                  <img src="./img/portafolio/otros5.jpeg" alt="">
+                  <figcaption class="fig-caption">
+                    <h3 class="tituloFigure">Arduino</h3>
+                    <span class="subtituloFigure">Practicas iOT usando Arduino</span>
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="grid-item col-md-4 proyectos-otros">
+                <figure>
+                  <img src="./img/portafolio/otros6.jpg" alt="">
+                  <figcaption class="fig-caption">
+                    <h3 class="tituloFigure">Equipos de Desarrollo</h3>
+                    <span class="subtituloFigure">Presentación de proyectos en equipo de Desarrollo</span>
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="grid-item col-md-4 proyectos-otros">
+                <figure>
+                  <img src="./img/portafolio/otros7.JPG" alt="">
+                  <figcaption class="fig-caption">
+                    <h3 class="tituloFigure">API Rest</h3>
+                    <span class="subtituloFigure">Creación y consumo de una API Rest</span>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <b id="contacto"></b>
   </div>
   <!-- Portafolio -->
 
-  <!-- Contacto
-<div class="container-fluid mt-5">
-  <div class="mb-3 text-center">
-    <h1 class="fontSubtitulos"><b>Contacto</b></h1>
-    <hr class="disenoLineaSubLight">
-  </div>
-</div>
-Contacto -->
-
   <!-- Footer -->
-  
   <svg class="olas" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 300">
     <path id="footerOlas" fill="#FDCEDE" fill-opacity="1" d="M0,256L40,218.7C80,181,160,107,240,106.7C320,
     107,400,181,480,181.3C560,181,640,107,720,106.7C800,107,880,181,960,224C1040,267,1120,
@@ -366,13 +505,7 @@ Contacto -->
     <script src="./js/changeTheme.js"></script>
     <script src="./js/scrollreveal.js"></script>
     <script src="./js/animacionScroll.js"></script>
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <!--  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>-->
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
+    <script src="./js/isotope.pkgd.min.js"></script>
 </body>
 
 </html>

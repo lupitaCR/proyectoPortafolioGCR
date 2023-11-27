@@ -1,11 +1,6 @@
 /* 
-GCR: SCRIPT PRONCIPAL DE LA PAGINA WEB
+GCR: SCRIPT PRINCIPAL DE LA PAGINA WEB
 */
-
-//CAROUSEL
-function downloadCV() {
-    console.log("descargado");
-}
 
 //ABOUT ME
 function redSocialMedia(socialM) {
@@ -17,8 +12,7 @@ function redSocialMedia(socialM) {
             window.open("https://api.whatsapp.com/send?phone=5214496481567");
             break;
         case "instagram":
-            window.open("https://www.instagram.com/lupitacr18");
-            //https://www.instagram.com/lupitacr18?utm_source=qr&r=nametag
+            window.open("https://instagram.com/lupita_cr18?igshid=M2RkZGJiMzhjOQ==");
             break;
     }
 }
@@ -40,7 +34,7 @@ let progressStartValue2 = 0;
 
 let circularProgress3 = document.querySelector('.circular-progress3');
 let progressValue3 = document.querySelector('.progress-value3');
-let progressEndValue3 = 70;
+let progressEndValue3 = 80;
 let speed3 = 100;
 let progressStartValue3 = 0;
 
@@ -89,10 +83,38 @@ function ejecutarProgress() {
     }, speed4);
 }
 
+//Scroll restaurado
 if ('scrollRestoration' in history) {
-    // Restaura la posición de desplazamiento después de cargar la página
     history.scrollRestoration = 'manual';
   }
+
+//PORTAFOLIO: filtrado de imagenes
+$(window).on("load" ,function() {
+    var $contenedorPortafolio = $('.portafolioContainer');
+    $contenedorPortafolio.isotope({
+        filter:'*',
+        animationOptions: {
+            queue: true
+        }
+    });
+    $('.portafolio-nav li').click(function () {
+        $('.portafolio-nav .current').removeClass('current');
+        $(this).addClass('current');
+        var selector =  $(this).attr('data-filter');
+        $contenedorPortafolio.isotope({
+            filter: selector,
+            animationOptions: {
+                queue: true
+            }
+        });
+        return false;
+
+    });
+
+    $('#portafolio-item').mixItUp();
+
+
+})
 
 
 
