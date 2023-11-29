@@ -1,22 +1,22 @@
 @font-face{
   font-family: 'Dancing Script';
-  src:url('../fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf');
+  src:url('/fonts/dancingscript.woff2') format('woff2');
   font-weight: bold;
 }
 
 @font-face{
   font-family: 'Poppins';
-  src:url('../fonts/Poppins/Poppins-Light.ttf');
+  src:url('/fonts/poppins-light.woff2') format('woff2');
 }
 /* GENERAL */
 .fontTitulosLight {
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Dancing Script', sans-serif;
   size: 20px;
   color:#6284E6;
 }
 
 .fontTitulosDark {
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Dancing Script', sans-serif;
   size: 20px;
   color:#f593b3;
 }
@@ -52,13 +52,13 @@
 .fontSubtitulosLight {
   size: 40px;
   color:#f593b3;
-  font-family: 'Dancing Script';
+  font-family: 'Dancing Script', sans-serif;
 }
 
 .fontSubtitulosDark {
   size: 40px;
   color:#6284E6;
-  font-family: 'Dancing Script';
+  font-family: 'Dancing Script', sans-serif;
 }
 
 .fontSubtitulos2 {
@@ -155,28 +155,28 @@ text-align: left !important;
   size: 50px;
   font-weight: bold;
   color: #6284E6;
-  font-family: 'Dancing Script';
+  font-family: 'Dancing Script', sans-serif;
 }
 
 .fontMenuDark {
   size: 50px;
   font-weight: bold;
   color:black;
-  font-family: 'Dancing Script';
+  font-family: 'Dancing Script', sans-serif;
 }
 
 .fontMenuLight:hover {
   size: 50px;
   font-weight: bold;
   color:#f593b3;
-  font-family: 'Dancing Script';
+  font-family: 'Dancing Script', sans-serif;
 }
 
 .fontMenuDark:hover {
   size: 50px;
   font-weight: bold;
   color:#99b2fb;
-  font-family: 'Dancing Script';
+  font-family: 'Dancing Script', sans-serif;
 }
 
 .background-navbarLight {
@@ -700,7 +700,7 @@ figure:hover figcaption {
 .textFooterLight {
   color: #6284E6;
   font-weight: bold;
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Dancing Script', sans-serif;
   font-size: 18px;
   text-align: center;
 }
@@ -708,7 +708,7 @@ figure:hover figcaption {
 .textFooterDark {
   color: black;
   font-weight: bold;
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Dancing Script', sans-serif;
   font-size: 18px;
   text-align: center;
 }
