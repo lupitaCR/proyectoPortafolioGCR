@@ -1,12 +1,15 @@
 @font-face{
-  font-family: 'Dancing Script';
-  src:url('/fonts/dancingscript.woff2') format('woff2');
+  font-family: "Dancing Script";
+  src: local('Dancing Script'),url('../fonts/DancingScript-VariableFont_wght.ttf');
   font-weight: bold;
+  font-display: swap;
 }
 
+
 @font-face{
-  font-family: 'Poppins';
-  src:url('/fonts/poppins-light.woff2') format('woff2');
+  font-family: "Poppins";
+  src:local('Poppins'),url("../fonts/Poppins-Regular.ttf");
+  font-display: swap;
 }
 /* GENERAL */
 .fontTitulosLight {

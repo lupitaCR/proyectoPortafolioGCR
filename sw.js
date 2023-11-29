@@ -1,10 +1,10 @@
 const nombreCache = "PWAIDGS10GCR";
-//especificar todos los archivos incluso imagenes, las de iconos son solo para pwa. no son necesarias
 const archivosCache = [
 "/",
 "/index.html",
+"/manifest.json",
 "/js/index.js",
-"/js/app.js",
+"/app.js",
 "/js/jquery-3.7.0.js",
 "/js/scrollreveal.js",
 "/js/isotope.pkgd.min.js",
@@ -16,8 +16,8 @@ const archivosCache = [
 "/css/bootstrap.min.css",
 "/css/index.css",
 "/css/bootstrap.min.css.map",
-"/fonts/poppins-light.woff2",
-"/fonts/dancingscript.woff2",
+"/fonts/DancingScript-VariableFont_wght.ttf",
+"/fonts/Poppins-Regular.ttf",
 "/img/imgGCR.jpg",
 "/img/imgLogo/icono512.png",
 "/img/imgCarousel2.jpg",
@@ -40,28 +40,48 @@ const archivosCache = [
 "/img/portafolio/web3.PNG"
 
 ];
-//  "/js/", "/img/",
-self.addEventListener('install', (e) => {
-    console.log("service se instalo", e);
+self.addEventListener("install", (e) => {
     //checa si ya se estuvo guardado
     e.waitUntil(
         caches.open(nombreCache).then((cache) => {
-            console.log("cache guardada"),
             cache.addAll(archivosCache);
         })
     );
 });
 
-self.addEventListener('activate',(e) => {
-    console.log('serviceactivo',e);
-});
-
-self.addEventListener('fetch', (e) => {
-    console.log("fetch", e);
+/* self.addEventListener('fetch', e => {
     e.respondWith(
         caches.match(e.request)
-        .then((respuestaCache) => {
-            return respuestaCache;
+        .then(respuestaCache => {
+            return respuestaCache || fetch(e.request);
         })
     )
-});
+}); */
+self.addEventListener('fetch', function(event) {
+    event.respondWith(
+      caches.match(event.request)
+        .then(function(response) {
+          if (response) {
+            return response;
+          }
+
+          var fetchRequest = event.request.clone();
+  
+          return fetch(fetchRequest).then(
+            function(response) {
+              if (!response || response.status !== 200 || response.type !== 'basic') {
+                return response;
+              }
+              var responseToCache = response.clone();
+  
+              caches.open(nombreCache)
+                .then(function(cache) {
+                  cache.put(event.request, responseToCache);
+                });
+  
+              return response;
+            }
+          );
+        })
+    );
+  });
