@@ -31,6 +31,7 @@ const temaOscuro = () => {
     document.querySelector("#cardAbout").setAttribute("class", "card rounded estiloAboutDark");
     document.querySelector("#sectionSM").setAttribute("class", "d-flex justify-content-evenly mt-4 p-1 fondoSMDark");
     document.querySelector("#tituloCard").setAttribute("class", "fontTitulosDark");
+    document.querySelector("#tituloCard2").setAttribute("class", "fontTitulosDark");
     document.querySelector("#iconSM1").setAttribute("class", "iconosDark");
     document.querySelector("#iconSM2").setAttribute("class", "iconosDark");
     document.querySelector("#iconSM3").setAttribute("class", "iconosDark");
@@ -97,6 +98,7 @@ const temaClaro = () => {
     document.querySelector("#cardAbout").setAttribute("class", "card rounded estiloAboutLight");
     document.querySelector("#sectionSM").setAttribute("class", "d-flex justify-content-evenly mt-4 p-1 fondoSMLight");
     document.querySelector("#tituloCard").setAttribute("class", "fontTitulosLight");
+    document.querySelector("#tituloCard2").setAttribute("class", "fontTitulosLight");
     document.querySelector("#iconSM1").setAttribute("class", "iconosLight");
     document.querySelector("#iconSM2").setAttribute("class", "iconosLight");
     document.querySelector("#iconSM3").setAttribute("class", "iconosLight");

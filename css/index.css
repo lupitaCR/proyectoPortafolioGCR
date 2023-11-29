@@ -240,8 +240,8 @@ text-align: left !important;
 }
 
 .imgAbout {
-  width: 250px;
-  height: 350px;
+  width: 350px;
+  height: 500px;
 }
 
 .fondoSMLight {
@@ -424,7 +424,6 @@ text-align: left !important;
   content: ' ';
   width: 2px;
   height: 100%;
-  background-color:#f593b3;
 }
 
 .contenedor ul li{
@@ -496,15 +495,6 @@ text-align: left !important;
   font-size: 14px;
 }
 
-.contenedor ul li .circulo {
-width: 30px;
-height: 30px;
-background-color: #99b2fb;
-border-radius: 50%;
-position: absolute;
-top: 0;
-left: 0;
-}
 
 .contenedor ul li:nth-child(even) .circulo {
   left:-30px;
@@ -519,13 +509,9 @@ left: 0;
 
 @media screen and (max-width:933px) {
   .contenedor{
-    width: 80%;
-    transform: translateX(15px);
+    width: 85%;
   }
 
-  .contenedor ul::after{
-    left: -30px;
-  }
 
   .contenedor ul li{
     width: 100%;
@@ -534,24 +520,6 @@ left: 0;
     margin-bottom: 80px;
   }
 
-  .contenedor ul li:nth-child(odd){
-    transform: translateX(0);
-    text-align: left;
-  }
-
-  .contenedor ul li:nth-child(odd) .date{
-    left: 20px;
-  }
-
-  .contenedor ul li:nth-child(even) .circulo{
-    left: -60px;
-    transform: translate(-50%,50%);
-  }
-
-  .contenedor ul li:nth-child(even){
-    
-    transform: translateX(0);
-  }
 }
 
 /* Portafolio */
@@ -674,7 +642,8 @@ figcaption .subtituloFigure {
 }
 
 figure:hover figcaption {
-  color: white;
+  color: black;
+  font-weight: bold;
   background-color: rgba(249, 148, 215, 0.7);
   border-radius: 10px;
 }
