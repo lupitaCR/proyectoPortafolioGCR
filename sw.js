@@ -38,7 +38,6 @@ const archivosCache = [
 "/img/portafolio/web1.PNG",
 "/img/portafolio/web2.jpeg",
 "/img/portafolio/web3.PNG"
-
 ];
 self.addEventListener("install", (e) => {
     //checa si ya se estuvo guardado
@@ -48,6 +47,11 @@ self.addEventListener("install", (e) => {
         })
     );
 });
+
+self.addEventListener('activate',(e) => {
+  console.log('serviceactivo',e);
+});
+
 
 /* self.addEventListener('fetch', e => {
     e.respondWith(
